@@ -1,0 +1,168 @@
+/* Basic CSS for styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    line-height: 1;
+    background-image: url(img/possessed-photography-jIBMSMs4_kA-unsplash.jpg);
+    background-size :cover;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+header {
+    background-color: rgb(6, 6, 6);
+    color: rgb(110, 12, 12);
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-image: url(img/possessed-photography-jIBMSMs4_kA-unsplash.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+nav{
+    display: flex;
+
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    }
+    nav img{
+       width: 250px; 
+    }
+    .nav-links ul li{
+    
+        list-style: none;
+        display: inline-block;
+        padding: 18px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+    
+        color: #080809;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .nav-links ul li ::after {
+    content: '' ;
+    width: 0%; 
+    height: 2px;
+    background:#1624e9 ;
+    display:block ;
+    margin: auto;
+    transition: 0.7s;
+    
+    }
+    .nav-links ul li:hover ::after{
+        width: 100%;
+    }
+
+main {
+    
+    justify-items: center;
+    
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 100px;
+    justify-content: center;
+    
+}
+
+.services, .about, .team, .benefits, .testimonials, .contact-info, .contact-form {
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #333;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #f61b1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #170c55;
+}
+
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+footer {
+    background-color: #f0f2ee;
+    color: rgb(11, 9, 9);
+    text-align: center;
+    padding: 0px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .hero {
+        margin-bottom: 20px;
+    }
+    
+    .testimonial {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+        padding: 8px;
+    }
+    
+    footer {
+        font-size: 14px;
+    }
+}
